@@ -8,13 +8,17 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class SigninComponent implements OnInit {
 
-  signingForm !: FormGroup;
+  signingForm!: FormGroup;
 
   constructor(
     private fb: FormBuilder
   ) { }
 
   ngOnInit(): void {
+    this.initFrom();
+  }
+
+  initFrom() : void {
     this.signingForm = this.fb.group({
       username: [''],
       password: [''],
