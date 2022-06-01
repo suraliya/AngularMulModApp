@@ -6,6 +6,7 @@ import { SigninComponent } from './signin/signin.component';
 import { AuthBaseComponent } from './auth-base/auth-base.component';
 import { SignupComponent } from './signup/signup.component';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
+import { AdminComponent } from './signup/admin/admin.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.co
     SigninComponent,
     AuthBaseComponent,
     SignupComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
