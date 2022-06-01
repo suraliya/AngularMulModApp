@@ -9,3 +9,9 @@ body {
   color: $textcolor;
   font-size: $fontsize;
 }
+
+.custom-save-btn {
+  border-radius: 1;
+  background-color: #8a2be2;
+  width: fit-content;
+}
