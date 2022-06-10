@@ -29,8 +29,5 @@ import { AlertPopupComponent } from '../shared/components/alert-popup/alert-popu
     ReactiveFormsModule,
     SharedModule
   ],
-  entryComponents: [
-    AlertPopupComponent
-  ]
 })
 export class AuthModule { }
