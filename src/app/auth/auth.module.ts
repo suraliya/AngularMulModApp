@@ -8,6 +8,9 @@ import { SignupComponent } from './signup/signup.component';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { AdminComponent } from './signup/admin/admin.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
+import { AlertPopupComponent } from '../shared/components/alert-popup/alert-popup.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
-  ]
+    AuthRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule
+  ],
 })
 export class AuthModule { }
